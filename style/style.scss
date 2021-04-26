@@ -1,0 +1,595 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  //overflow-x: none;
+}
+
+body {
+  background-color: #000000;
+
+  //overflow-x: none;
+}
+
+.navMobileLinks {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  margin-top: 1rem;
+  position: fixed;
+  z-index: 99;
+  transition: top 0.3s;
+  text-shadow: 2px 2px 8px rgb(2, 2, 2);
+
+  .links {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .links:hover {
+    color: rgb(254, 136, 0);
+    transition: 0.3s;
+  }
+}
+
+//Nav header
+.navHeader {
+  .navLinks {
+    color: rgb(241, 171, 91);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .navLinks:hover {
+    color: white;
+  }
+}
+
+//LANDING PAGE
+.landingPage {
+  height: 100vh;
+  background-image: url("../pictures/cloud.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+
+  .text {
+    margin-left: 22rem;
+    margin-top: 2rem;
+  }
+
+  .myNameIs {
+    margin-top: 23rem;
+    margin-bottom: -2.5rem;
+    margin-left: 8rem;
+    font-family: "Raleway", sans-serif;
+    color: rgb(254, 136, 0);
+    font-size: 1.2rem;
+  }
+
+  .name {
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 9.5rem;
+  }
+
+  .webDeveloper {
+    font-family: "Raleway", sans-serif;
+    margin-top: -0.6rem;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 13rem;
+  }
+
+  span {
+    color: rgb(254, 136, 0);
+  }
+}
+
+//ABOUT ME
+#aboutMePage {
+  background-image: url("../pictures/sky2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.aboutMe {
+  .aboutMeText {
+    height: 550px;
+    border-radius: 25px;
+    -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.409);
+    overflow: auto;
+  }
+
+  .textAboutMe {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+
+  .knowledge {
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+  }
+
+  h4 {
+    color: rgb(246, 168, 79);
+  }
+
+  span {
+    color: rgb(246, 168, 79);
+    font-size: 1.5rem;
+  }
+
+  .knowledgeP {
+    transition: 0.2s;
+    line-height: 0;
+    font-size: 1.5rem;
+    span {
+      color: rgb(254, 136, 0);
+    }
+  }
+
+  .knowledgeP:hover {
+    transform: scale(1.5);
+  }
+}
+
+//PORTFOLIO
+@mixin project {
+  margin-top: 10rem;
+  border-radius: 25px;
+  //overflow: auto;
+  background: rgba(0, 0, 0, 0.505);
+  height: 70vh;
+  overflow-x: hidden;
+}
+
+.portfolioBG {
+  background-image: url("../pictures/sky2.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+.portfolioPage {
+  height: 100vh;
+  background-repeat: no-repeat;
+  .pOne {
+    @include project;
+
+    .projectOnePic {
+      transition: all 0.2s;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+    }
+
+    a {
+      margin-top: 100%;
+      text-decoration: none;
+      color: rgb(246, 168, 79);
+    }
+  }
+
+  .pTwo {
+    @include project;
+
+    .projectTwoPic {
+      transition: all 0.2s;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+    }
+    a {
+      text-decoration: none;
+      color: rgb(246, 168, 79);
+    }
+  }
+
+  .pThree {
+    @include project;
+
+    .projectThreePic {
+      transition: all 0.2s;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+    }
+    a {
+      text-decoration: none;
+      color: rgb(246, 168, 79);
+    }
+  }
+
+  .projectOnePic:hover,
+  .projectTwoPic:hover,
+  .projectThreePic:hover {
+    transform: scale(1.2);
+  }
+}
+
+///////////////
+//CONTACT
+
+.contact {
+  height: 100vh;
+  background-image: url("../pictures/ground2.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+
+  .contactDiv {
+    display: flex;
+
+    .contactInfo {
+      border-radius: 25px;
+      width: 50rem;
+      margin: 0 auto;
+      margin-top: 10rem;
+      -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+      box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+      background-color: rgba(0, 0, 0, 0.409);
+
+      h1 {
+        margin: 3rem 0 0 3rem;
+        font-size: 2.3rem;
+        color: rgb(246, 168, 79);
+      }
+
+      span {
+        color: rgb(246, 168, 79);
+      }
+
+      ul {
+        margin-left: 1.5rem;
+        margin-top: 40px;
+        font-size: 1.5rem;
+
+        list-style: none;
+        color: white;
+      }
+
+      li {
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        color: rgb(246, 168, 79);
+      }
+
+      .logos {
+        height: 50px;
+        margin-top: 140px;
+        margin-right: 20px;
+        padding-bottom: 10%;
+        // display: grid;
+        // grid-template-columns: 65px 65px 65px 65px;
+        display: flex;
+        //justify-items: end;
+        justify-content: flex-end;
+
+        #facebook,
+        #linktedIn,
+        #gitHub {
+          height: 50px;
+          margin-left: 10px;
+          transition: 0.2s;
+        }
+
+        #mail {
+          height: 55px;
+          transition: 0.2s;
+        }
+      }
+
+      #mail:hover {
+        transform: scale(1.2);
+      }
+
+      #gitHub:hover {
+        transform: scale(1.2);
+      }
+
+      #linktedIn:hover {
+        transform: scale(1.2);
+      }
+
+      #facebook:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+///////////// Ipad View ////////////////
+//SECTION
+@media screen and (max-width: 991px) {
+  .landingPage {
+    .text {
+      margin-left: 12rem;
+    }
+
+    .myNameIs {
+      margin-bottom: -0.8rem;
+      margin-left: 5.25rem;
+
+      font-size: 0.8rem;
+    }
+
+    .name {
+      font-size: 5.5rem;
+    }
+
+    .webDeveloper {
+      font-size: 0.8rem;
+      margin-left: 6rem;
+    }
+  }
+
+  //About me
+
+  .aboutMe {
+    .aboutMeText {
+      margin-top: 3.5rem;
+    }
+
+    .knowledgeP {
+      line-height: 0;
+    }
+  }
+
+  //PORTFOLIO
+  @mixin project {
+    margin-top: 3rem;
+  }
+
+  .portfolioPage {
+    height: 70vh;
+
+    .pOne {
+      @include project;
+    }
+
+    .pTwo {
+      @include project;
+    }
+
+    .pThree {
+      @include project;
+    }
+  }
+}
+
+//////// phone ///////
+//SECTION
+
+@media screen and (max-width: 465px) {
+  //Remove desktop nav
+  .nav {
+    display: none;
+  }
+
+  .navMobileLinks {
+    display: inline;
+
+    .navMobile {
+      position: absolute;
+      background-color: #050538;
+      width: 365px;
+      height: 100%;
+      left: -365px;
+      transition: 0.5s;
+      padding-top: 200px;
+    }
+    .navMobile.active {
+      position: fixed;
+      left: 0px;
+      z-index: 1;
+      border-radius: 0 35% 0 0;
+    }
+
+    #hamburger {
+      //position: absolute;
+      //position: fixed;
+      //z-index: 3;
+      //left: 2rem;
+      top: 5.5%;
+      z-index: 4;
+      transition: 0.3s ease-in-out;
+      //margin: 0;
+      position: fixed;
+      //overflow: hidden;
+      //width: 100px;
+      // height: 100px;
+      //overflow: auto;
+      left: calc(100% - 3rem);
+      top: 35px;
+      cursor: pointer;
+      padding: 0;
+      background: transparent;
+      border: none;
+    }
+
+    .one,
+    .two,
+    .three {
+      //top: 25%;
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin-bottom: 5px;
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      transition: 0.3s ease-in-out;
+    }
+
+    // .one {
+    //   top: 25%;
+    // }
+    // .two {
+    //   top: 45%;
+    // }
+    // .three {
+    //   top: 65%;
+    // }
+
+    .navMobile a {
+      display: block;
+      padding: 20px 30px;
+      font-size: 25px;
+      text-decoration: none;
+      color: rgb(246, 168, 79);
+    }
+  }
+
+  //Landing page
+  .landingPage {
+    .text {
+      margin-left: 1.5rem;
+    }
+
+    .myNameIs {
+      margin-top: 20rem;
+      margin-bottom: -0.8rem;
+      margin-left: 5.25rem;
+      font-size: 0.8rem;
+    }
+
+    .name {
+      font-size: 5.5rem;
+    }
+
+    .webDeveloper {
+      font-size: 0.8rem;
+      margin-left: 6rem;
+    }
+  }
+
+  //About me
+  #aboutMePage {
+    height: 100%;
+  }
+
+  .aboutMe {
+    .aboutMeText {
+      margin-top: 3.5rem;
+    }
+
+    .textAboutMe {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .knowledgeP {
+      line-height: 0;
+      font-size: 1.5rem;
+    }
+
+    .knowledge {
+      margin-top: 4rem;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  //PORTFOLIO
+  @mixin project {
+    margin-top: 3rem;
+    height: 53vh;
+  }
+
+  .portfolioPage {
+    //margin-top: 15rem;
+    .pOne {
+      @include project;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .pTwo {
+      @include project;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .pThree {
+      @include project;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  //CONTACT
+
+  .contact {
+    .contactDiv {
+      .contactInfo {
+        width: 100%;
+
+        h1 {
+          margin: 3rem 0 0 1rem;
+          font-size: 1.5rem;
+        }
+
+        ul {
+          margin-left: 0px;
+          padding-left: 0.3rem;
+        }
+
+        li {
+          padding-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.fas {
+  color: red;
+  z-index: 99;
+}

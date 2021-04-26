@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+  <script src="script/script.js"></script>
+  <title>Jimmy</title>
+</head>
+
+<!--Navbar for mobile view-->
+<body>
+        <div class="navMobileLinks">
+          <div id="hamburger">
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+          </div>
+          <nav>
+            <div class="navMobile">
+              <a class="mobileLinks" href="#">Hem</a>
+              <a class="mobileLinks" href="#aboutMePage">Om mig</a>
+              <a class="mobileLinks" href="#portfolioPageID">Portfolio</a>
+              <a class="mobileLinks" href="#contactPage">Kontakt</a>
+            </div>
+          </nav>
+        </div>
+
+  <!-- Landing page -->
+  <div class="container">
+    <div class="nav" id="navBar">
+      <a class="links" href="#">Hem</a>
+      <a class="links" href="#aboutMePage">Om mig</a>
+      <a class="links" href="#portfolioPageID">Portfolio</a>
+      <a class="links" href="#contactPage">Kontakt</a>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 landingPage">
+        <div class="text">
+          <div class="landingText">
+            <p class="myNameIs">Mitt namn är</p>
+            <p class="name">Jimmy</p>
+            <p class="webDeveloper">En junior <span>webbutvecklare</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About me -->
+  <div class="container">
+    <div id="aboutMePage" class="row">
+      <div class="col-lg-6 aboutMe my-auto">
+        <div class="aboutMeText">
+          <div class="textAboutMe">
+
+            <span>M</span>itt namn är Jimmy Rickardsson. Jag är 33år gammal
+            och bor i Stockholm.<br />
+            <br />
+            <span>J</span>ag är i grund och botten en utbildad elektriker med
+            många års erfarenhet inom byggbranschen men jag har alltid haft
+            ett stort intresse för IT och programmering och nu har jag tagit
+            beslutet att följa min dröm och bli en duktig utvecklare!
+            <br />
+            <br />
+            <span>F</span>ör tillfället så studerar jag mitt första år på
+            Nackademins yrkeshögskola i Solna och utbildningen web developer
+            full stack opensource. <br />
+            Det läggs mycket fokus på både front end och back end, men även på
+            agilt arbete. <br />
+            <br />
+            <span>J</span>ag beräknas vara klar med min utbildning år 2022.
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 aboutMe my-auto">
+        <div class="knowledge">
+          <p></p>
+          <h4>Jag har kunskaper inom</h4>
+          <br />
+          <br />
+          <p class="knowledgeP"><span>J</span>avaScript</p>
+          <br />
+          <p class="knowledgeP"><span>N</span>odeJS</p>
+          <br />
+          <p class="knowledgeP"><span>H</span>TML/CSS</p>
+          <br />
+          <p class="knowledgeP"><span>R</span>eact</p>
+          <br />
+          <p class="knowledgeP"><span>P</span>HP</p>
+          <br />
+          <p class="knowledgeP"><span>m</span>ySQL</p>
+          <br />
+          <p class="knowledgeP"><span>n</span>oSQL</p>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div class="container">
+    <div id="portfolioPageID" class="row portfolioBG">
+      <div class="col-lg-4 portfolioPage my-auto">
+        <div class="pOne">
+          <a href="https://github.com/RickardssonJ/Chat-application" target="_blank"><img class="projectOnePic"
+              src="./pictures/chat.jpg" alt="quiz skylt i neon färg" /></a>
+          <p>
+            I det här projektet har jag byggt en chat applikationen i
+            nodeJS/express.</br>
+            Med ett registrerings och inloggnings system via MongoDB
+          </p>
+
+          <a href="https://github.com/RickardssonJ/Chat-application" target="_blank">Till github repot</a>
+        </div>
+
+      </div>
+      <div class="col-lg-4 portfolioPage my-auto">
+        <div class="pTwo">
+          <a href="https://github.com/RickardssonJ/ACME" target="_blank"><img class="projectTwoPic"
+              src="./pictures/party.jpg" alt="quiz skylt i neon färg" /></a>
+
+          <p>
+            I det här projektet låg fokus på att kunna hämta och lagra data i
+            localstorage
+          </p>
+          <p>All javaScript bygger på OOP</p>
+
+          <a href="https://github.com/RickardssonJ/ACME" target="_blank">Till github repot</a>
+        </div>
+      </div>
+      <div class="col-lg-4 portfolioPage my-auto">
+        <div class="pThree">
+          <a href="https://github.com/RickardssonJ/Quiz" target="_blank"><img class="projectThreePic"
+              src="./pictures/quiz-time-678x381.jpg" alt="quiz skylt i neon färg" /></a>
+
+          <p>Quiz där frågorna hämtas via ett API</p>
+          <p>All javaScript bygger på OOP</p>
+
+          <a href="https://github.com/RickardssonJ/Quiz" target="_blank">Till github repot</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div class="container">
+    <div id="contactPage" class="row">
+      <div class="col-12 my-auto contact">
+        <div class="contactDiv">
+          <div class="contactInfo">
+            <h1>Kom i kontakt med mig</h1>
+            <ul>
+              <li class="contactText">
+                <span>M</span>ail<br><a href="mailto:Rickardssonjimmy@gmail.com">Rickardssonjimmy@gmail.com</a>
+              </li>
+              <li class="contactText"><span>T</span>elefon<br> 076-244 93 14</li>
+            </ul>
+            <div class="logos">
+              <a class="gsapAnimation" href="mailto:Rickardssonjimmy@gmail.com"><img id="mail" src="./pictures/mail.png"
+                  alt="ett brev" /></a>
+              <a class="gsapAnimation" href="https://github.com/RickardssonJ" target="_blank"><img id="gitHub"
+                  src="./pictures/github.png" alt="Githubs logga" /></a>
+              <a class="gsapAnimation" href="https://www.linkedin.com/in/jimmy-rickardsson-829072173/"
+                target="_blank"><img id="linktedIn" src="./pictures/linkedin.png" alt="Linkedin logga" /></a>
+              <a class="gsapAnimation" href="https://www.facebook.com/jimmy.rickardsson.3" target="_blank"><img
+                  id="facebook" src="./pictures/facebook.png" alt="Facebook logga" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
