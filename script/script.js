@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-  console.log(window.innerWidth)
-
   const hamburger = document.getElementById("hamburger")
   const navMobile = document.querySelector(".navMobile")
 
@@ -12,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   navMobile.addEventListener("click", () => {
     document.querySelector(".navMobile").classList.toggle("active")
   })
-  //Slide my name and webdeveloper
-  //gsap.from(".myNameIs", { duration: 1.5, x: "-100%", ease: "power4" })
-  // gsap.from(".webDeveloper", { duration: 1.5, x: "+100%", ease: "power4" })
 
   // When the user scrolls down, the function will hide the nav bar and when the user scrolls up the function will show the navbar
 
@@ -31,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   if (window.innerWidth > 400) {
+    //Slide my name and webdeveloper
+    gsap.from(".myNameIs", { duration: 1.5, x: "-100%", ease: "power4" })
+    gsap.from(".webDeveloper", { duration: 1.5, x: "+100%", ease: "power4" })
     //ABout me page
     gsap.from(".knowledge", {
       duration: 1,

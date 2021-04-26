@@ -11463,10 +11463,12 @@ fieldset:disabled .btn {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #000000;
+  background-color: #010834;
+  overflow-x: hidden;
 }
 
 .navMobileLinks {
@@ -11488,8 +11490,9 @@ body {
 .nav .links {
   margin-left: 1rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav .links:hover {
@@ -11558,6 +11561,11 @@ body {
   background-position-y: center;
 }
 
+.aboutMe {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+
 .aboutMe .aboutMeText {
   height: 550px;
   border-radius: 25px;
@@ -11568,12 +11576,24 @@ body {
 }
 
 .aboutMe .textAboutMe {
-  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
   padding-top: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
   color: white;
   text-align: left;
+  font-size: 1.2rem;
+}
+
+.aboutMe .aboutMeText::-webkit-scrollbar {
+  display: none;
+}
+
+.aboutMe .aboutMeText {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .aboutMe .knowledge {
@@ -11592,6 +11612,7 @@ body {
 }
 
 .aboutMe .knowledgeP {
+  font-family: "Poppins", sans-serif;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   line-height: 0;
@@ -11622,6 +11643,7 @@ body {
 .portfolioPage .pOne {
   margin-top: 10rem;
   border-radius: 25px;
+  font-family: "Poppins", sans-serif;
   background: rgba(0, 0, 0, 0.505);
   height: 70vh;
   overflow-x: hidden;
@@ -11638,7 +11660,7 @@ body {
 
 .portfolioPage .pOne p {
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -11651,6 +11673,7 @@ body {
 .portfolioPage .pTwo {
   margin-top: 10rem;
   border-radius: 25px;
+  font-family: "Poppins", sans-serif;
   background: rgba(0, 0, 0, 0.505);
   height: 70vh;
   overflow-x: hidden;
@@ -11667,7 +11690,7 @@ body {
 
 .portfolioPage .pTwo p {
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -11679,6 +11702,7 @@ body {
 .portfolioPage .pThree {
   margin-top: 10rem;
   border-radius: 25px;
+  font-family: "Poppins", sans-serif;
   background: rgba(0, 0, 0, 0.505);
   height: 70vh;
   overflow-x: hidden;
@@ -11695,11 +11719,12 @@ body {
 
 .portfolioPage .pThree p {
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
 .portfolioPage .pThree a {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #f6a84f;
 }
@@ -11723,6 +11748,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact .contactDiv .contactInfo {

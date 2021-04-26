@@ -5,13 +5,12 @@
 
 html {
   scroll-behavior: smooth;
-  //overflow-x: none;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #000000;
-
-  //overflow-x: none;
+  background-color: #010834;
+  overflow-x: hidden;
 }
 
 .navMobileLinks {
@@ -29,8 +28,9 @@ body {
   .links {
     margin-left: 1rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    font-family: "Poppins", sans-serif;
   }
 
   .links:hover {
@@ -115,12 +115,23 @@ body {
   }
 
   .textAboutMe {
-    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
     padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
     color: rgb(255, 255, 255);
     text-align: left;
+    font-size: 1.2rem;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .aboutMeText::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .aboutMeText {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   .knowledge {
@@ -139,6 +150,7 @@ body {
   }
 
   .knowledgeP {
+    font-family: "Poppins", sans-serif;
     transition: 0.2s;
     line-height: 0;
     font-size: 1.5rem;
@@ -156,7 +168,7 @@ body {
 @mixin project {
   margin-top: 10rem;
   border-radius: 25px;
-  //overflow: auto;
+  font-family: "Poppins", sans-serif;
   background: rgba(0, 0, 0, 0.505);
   height: 70vh;
   overflow-x: hidden;
@@ -183,7 +195,7 @@ body {
 
     p {
       margin: 0 auto;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: rgb(255, 255, 255);
     }
 
@@ -206,7 +218,7 @@ body {
 
     p {
       margin: 0 auto;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: rgb(255, 255, 255);
     }
     a {
@@ -227,10 +239,11 @@ body {
 
     p {
       margin: 0 auto;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: rgb(255, 255, 255);
     }
     a {
+      font-family: "Poppins", sans-serif;
       text-decoration: none;
       color: rgb(246, 168, 79);
     }
@@ -255,6 +268,7 @@ body {
 
   .contactDiv {
     display: flex;
+    font-family: "Poppins", sans-serif;
 
     .contactInfo {
       border-radius: 25px;
